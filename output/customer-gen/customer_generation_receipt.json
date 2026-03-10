@@ -1,0 +1,31 @@
+{
+  "dataset": "novawireless_customers_plus_account_graph",
+  "run_ts": "2026-03-09T17:11:33",
+  "n_customers": 100000,
+  "seed": 42,
+  "params": {
+    "month_to_month_plan_rate": 0.55,
+    "p_inject_eip_usage_mismatch": 0.06,
+    "p_voice_eip_attach_if_plan": 0.85,
+    "usage_snapshot_date": "2025-12-31"
+  },
+  "counts": {
+    "lines": 236076,
+    "devices": 271487,
+    "eip_agreements": 161626,
+    "imei_mismatched_lines_generation_time": 8769,
+    "hsi_lines": 44518
+  },
+  "outputs": {
+    "output_customers_csv": "output/customers.csv",
+    "params_customers_v1_csv": "data/external/params_sources/customers_v1.csv",
+    "output_lines_csv": "output/lines.csv",
+    "output_devices_csv": "output/devices.csv",
+    "output_eip_agreements_csv": "output/eip_agreements.csv",
+    "output_line_device_usage_csv": "output/line_device_usage.csv"
+  },
+  "notes": [
+    "This generator is the upstream truth for account metadata required by Dirty Frank governance detection.",
+    "Ledger build step (02) will flatten these tables into master_account_ledger.csv for call generation joins."
+  ]
+}

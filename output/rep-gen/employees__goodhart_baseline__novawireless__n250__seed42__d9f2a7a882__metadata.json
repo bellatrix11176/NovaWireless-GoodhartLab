@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-03-09T17:13:43",
+  "experiment": "NovaWireless-GoodhartLab",
+  "condition": "goodhart_baseline",
+  "n": 250,
+  "seed": 42,
+  "site": "NovaWireless",
+  "queue_name": "General Support",
+  "used_files": [
+    "kaggle_employee_persona_priors.csv",
+    "fcc_cgb_consumer_complaints__rep_specialization_priors.csv",
+    "kaggle_call_center_weekday_pressure.csv",
+    "ibm_telco_segment_pressure.csv"
+  ],
+  "goodhart_params": {
+    "base_strain": 0.52,
+    "base_training": 6.5,
+    "compliance_risk": "synthesized",
+    "gaming_propensity": "derived from compliance_risk"
+  },
+  "vs_governance": {
+    "base_strain": {
+      "goodhart": 0.52,
+      "governance": 0.35
+    },
+    "base_training": {
+      "goodhart": 6.5,
+      "governance": 9.0
+    },
+    "gaming": {
+      "goodhart": "synthesized + compounds per call",
+      "governance": "hardcoded 0.0"
+    }
+  },
+  "rules": {
+    "single_queue": true,
+    "single_department": "Call Center",
+    "single_role": "Customer Service Representative",
+    "no_transfers": true,
+    "skills_as_strengths": true,
+    "network_service_means": "tech_support",
+    "gaming_active": true
+  }
+}

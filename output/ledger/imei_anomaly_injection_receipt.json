@@ -1,0 +1,31 @@
+{
+  "run_ts": "2026-03-09T17:13:42",
+  "seed": 1337,
+  "input": "C:\\Users\\gigih\\OneDrive\\NovaWireless\\Finished Projects\\NovaWireless-GoodhartLab\\data\\external\\params_sources\\master_account_ledger.csv",
+  "outputs": {
+    "output_anomalies_ledger": "C:\\Users\\gigih\\OneDrive\\NovaWireless\\Finished Projects\\NovaWireless-GoodhartLab\\output\\master_account_ledger__anomalies.csv",
+    "params_anomalies_ledger": "C:\\Users\\gigih\\OneDrive\\NovaWireless\\Finished Projects\\NovaWireless-GoodhartLab\\data\\external\\params_sources\\master_account_ledger__anomalies.csv",
+    "evidence_file": "C:\\Users\\gigih\\OneDrive\\NovaWireless\\Finished Projects\\NovaWireless-GoodhartLab\\output\\imei_anomaly_examples.csv"
+  },
+  "params": {
+    "p_mismatch": 0.07,
+    "p_missing": 0.04,
+    "within_customer_only": true,
+    "overwrite_base": false,
+    "missing_split": {
+      "capture_failure": 0.7,
+      "ghost_line": 0.3
+    }
+  },
+  "counts": {
+    "rows_total": 236076,
+    "rows_anomaly_tagged": 17984,
+    "imei_mismatch_flag_count": 18485,
+    "missing_usage_imei_flag_count": 6610,
+    "upstream_friction_risk_flag_count": 25095
+  },
+  "notes": [
+    "Mismatch swaps operate on usage_imei to simulate 'device used on different line than financed'.",
+    "Missing usage_imei simulates capture failure + ghost lines."
+  ]
+}

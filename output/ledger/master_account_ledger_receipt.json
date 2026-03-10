@@ -1,0 +1,25 @@
+{
+  "run_ts": "2026-03-09T17:11:45",
+  "inputs": {
+    "customers": "C:\\Users\\gigih\\OneDrive\\NovaWireless\\Finished Projects\\NovaWireless-GoodhartLab\\output\\customers.csv",
+    "lines": "C:\\Users\\gigih\\OneDrive\\NovaWireless\\Finished Projects\\NovaWireless-GoodhartLab\\output\\lines.csv",
+    "eip_agreements": "C:\\Users\\gigih\\OneDrive\\NovaWireless\\Finished Projects\\NovaWireless-GoodhartLab\\output\\eip_agreements.csv",
+    "line_device_usage": "C:\\Users\\gigih\\OneDrive\\NovaWireless\\Finished Projects\\NovaWireless-GoodhartLab\\output\\line_device_usage.csv"
+  },
+  "outputs": {
+    "output_master_ledger": "C:\\Users\\gigih\\OneDrive\\NovaWireless\\Finished Projects\\NovaWireless-GoodhartLab\\output\\master_account_ledger.csv",
+    "params_master_ledger": "C:\\Users\\gigih\\OneDrive\\NovaWireless\\Finished Projects\\NovaWireless-GoodhartLab\\data\\external\\params_sources\\master_account_ledger.csv"
+  },
+  "counts": {
+    "rows": 236076,
+    "eip_exists": 236076,
+    "imei_mismatch": 161626,
+    "missing_usage_imei": 0,
+    "eip_mismatch": 0,
+    "upstream_friction_risk": 161626
+  },
+  "notes": [
+    "Ledger is now written to params_sources so call generator can attach it.",
+    "Canonical IMEI columns are eip_imei and usage_imei."
+  ]
+}

@@ -1,0 +1,8 @@
+# NovaWireless-GoodhartLab
+# Data generation pipeline dependencies only.
+# Analysis projects (AnalysisLab, governance-pipeline) have their own requirements.
+
+numpy>=1.26.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+reportlab>=4.0.0
