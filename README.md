@@ -5,6 +5,11 @@ Companion code to Aulabaugh (2026), *"The Hidden Cost of Measurement: Why Call C
 
 ---
 
+⚠️ Resource Notice
+This pipeline is designed to be run iteratively on small datasets. Do not run against large datasets in a single pass. Process one month at a time to avoid memory and CPU overload. Adjust chunk sizes based on your available system resources.
+
+---
+
 ## What This Is
 
 NovaWireless-GoodhartLab is a multi-sub-project synthetic data pipeline that simulates a wireless carrier call center and retail store environment to demonstrate how optimizing for measurable proxy metrics distorts outcomes — and to generate realistic data for governance framework design.
