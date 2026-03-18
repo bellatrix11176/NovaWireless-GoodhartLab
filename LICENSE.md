@@ -1,3 +1,5 @@
+## License
+
 Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
 
 Copyright (c) 2026 Gina Aulabaugh / PixelKraze, LLC
